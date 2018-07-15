@@ -1,0 +1,26 @@
+
+.site-header {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.site-title {
+    padding-left: 63%;
+    padding-top: 12%;
+    font-size: 3.5em;
+    line-height: 1em;
+    margin-bottom: .3em;
+}
+
+.site-description {
+    padding-left: 67%;
+    padding-right: 45px;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: "josefin slab";
+}
+
+.nav-menu a {
+    color: $color__menu-link;
+}
