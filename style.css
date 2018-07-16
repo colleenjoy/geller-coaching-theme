@@ -437,6 +437,12 @@ h1 {
   font-weight: 600;
 }
 
+/* line 10, sass/typography/_headings.scss */
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
 /* line 1, sass/typography/_copy.scss */
 p {
   margin-bottom: 1.5em;
@@ -936,6 +942,76 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
+/* line 26, sass/site/primary/_posts-and-pages.scss */
+.front-page {
+  text-align: center;
+}
+
+/* line 30, sass/site/primary/_posts-and-pages.scss */
+.newsletter {
+  margin: 60px 0;
+}
+
+/* line 34, sass/site/primary/_posts-and-pages.scss */
+.newsletter-message {
+  font-weight: 600;
+}
+
+/* line 38, sass/site/primary/_posts-and-pages.scss */
+.featured-banner {
+  background-color: #E6E8EB;
+  padding: 60px 0;
+}
+
+/* line 43, sass/site/primary/_posts-and-pages.scss */
+.featured-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* line 48, sass/site/primary/_posts-and-pages.scss */
+.featured-card {
+  border: #808C99 2px solid;
+  height: 275px;
+  width: 305px;
+  position: relative;
+}
+
+/* line 55, sass/site/primary/_posts-and-pages.scss */
+.card-text {
+  font-weight: 300;
+  font-size: 1.5em;
+  margin: 35px 20px 0 23px;
+  text-align: left;
+}
+
+/* line 62, sass/site/primary/_posts-and-pages.scss */
+.featured-card-link {
+  background-color: #B9BFC7;
+  height: 75px;
+  width: 335px;
+  text-align: center;
+  font-family: "josefin slab";
+  position: absolute;
+  left: -15px;
+  bottom: 25px;
+}
+
+/* line 74, sass/site/primary/_posts-and-pages.scss */
+.featured-card-link h2 {
+  padding-top: 12px;
+}
+
+/* line 78, sass/site/primary/_posts-and-pages.scss */
+.call-to-action {
+  font-weight: 400;
+}
+
+/* line 82, sass/site/primary/_posts-and-pages.scss */
+.call-to-action h2 {
+  font-family: "lato";
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -962,13 +1038,14 @@ a:hover, a:active {
 /* line 8, sass/site/primary/_header.scss */
 .site-title {
   padding-left: 63%;
-  padding-top: 12%;
+  padding-top: 7%;
   font-size: 3.5em;
   line-height: 1em;
   margin-bottom: .3em;
+  font-family: "josefin slab";
 }
 
-/* line 16, sass/site/primary/_header.scss */
+/* line 17, sass/site/primary/_header.scss */
 .site-description {
   padding-left: 67%;
   padding-right: 45px;
@@ -977,7 +1054,7 @@ a:hover, a:active {
   font-family: "josefin slab";
 }
 
-/* line 24, sass/site/primary/_header.scss */
+/* line 25, sass/site/primary/_header.scss */
 .nav-menu a {
   color: white;
 }

@@ -20,3 +20,65 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+// front page stylization
+
+.front-page {
+	text-align: center;
+}
+
+.newsletter {
+	margin: 60px 0;
+}
+
+.newsletter-message {
+	font-weight: 600;
+}
+
+.featured-banner {
+	background-color: #E6E8EB;
+	padding: 60px 0;
+}
+
+.featured-cards {
+	display: flex;
+	justify-content: space-around;
+}
+
+.featured-card{
+	border: #808C99 2px solid;
+	height: 275px;
+	width: 305px;
+	position: relative;
+}
+
+.card-text {
+	font-weight: 300;
+	font-size: 1.5em;
+	margin: 35px 20px 0 23px;
+	text-align: left;
+}
+
+.featured-card-link {
+	background-color: #B9BFC7;
+	height: 75px;
+	width: 335px;
+	text-align: center;
+	font-family: "josefin slab";
+	position: absolute;
+	left: -15px;
+	bottom: 25px;
+
+}
+
+.featured-card-link h2 {
+	padding-top: 7.5px;
+}
+
+.call-to-action {
+	font-weight: 400;
+}
+
+.call-to-action h2 {
+	font-family: "lato";
+}
