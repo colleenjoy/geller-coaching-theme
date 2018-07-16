@@ -430,17 +430,12 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "Josefin Slab";
+  font-weight: 400;
 }
 
-/* line 6, sass/typography/_headings.scss */
-h1 {
-  font-weight: 600;
-}
-
-/* line 10, sass/typography/_headings.scss */
+/* line 7, sass/typography/_headings.scss */
 h2 {
   font-size: 1.5em;
-  font-weight: 400;
 }
 
 /* line 1, sass/typography/_copy.scss */
@@ -744,46 +739,48 @@ a:hover, a:active {
 /* line 52, sass/navigation/_menus.scss */
 .site-navigation li {
   position: relative;
+  display: inline-block;
+  margin-left: 15px;
 }
-/* line 61, sass/navigation/_menus.scss */
+/* line 63, sass/navigation/_menus.scss */
 .site-navigation a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 
 /* Small menu. */
-/* line 74, sass/navigation/_menus.scss */
+/* line 76, sass/navigation/_menus.scss */
 .menu-toggle,
 .site-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 80, sass/navigation/_menus.scss */
+  /* line 82, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 83, sass/navigation/_menus.scss */
+  /* line 85, sass/navigation/_menus.scss */
   .site-navigation ul {
-    display: block;
+    display: inline-block;
   }
 }
-/* line 92, sass/navigation/_menus.scss */
+/* line 94, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 97, sass/navigation/_menus.scss */
+/* line 99, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 102, sass/navigation/_menus.scss */
+/* line 104, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -964,12 +961,18 @@ a:hover, a:active {
 }
 
 /* line 43, sass/site/primary/_posts-and-pages.scss */
+.featured-cards-title {
+  font-family: "lato";
+  margin-bottom: 40px;
+}
+
+/* line 48, sass/site/primary/_posts-and-pages.scss */
 .featured-cards {
   display: flex;
   justify-content: space-around;
 }
 
-/* line 48, sass/site/primary/_posts-and-pages.scss */
+/* line 53, sass/site/primary/_posts-and-pages.scss */
 .featured-card {
   border: #808C99 2px solid;
   height: 275px;
@@ -977,7 +980,7 @@ a:hover, a:active {
   position: relative;
 }
 
-/* line 55, sass/site/primary/_posts-and-pages.scss */
+/* line 60, sass/site/primary/_posts-and-pages.scss */
 .card-text {
   font-weight: 300;
   font-size: 1.5em;
@@ -985,7 +988,7 @@ a:hover, a:active {
   text-align: left;
 }
 
-/* line 62, sass/site/primary/_posts-and-pages.scss */
+/* line 67, sass/site/primary/_posts-and-pages.scss */
 .featured-card-link {
   background-color: #B9BFC7;
   height: 75px;
@@ -997,19 +1000,17 @@ a:hover, a:active {
   bottom: 25px;
 }
 
-/* line 74, sass/site/primary/_posts-and-pages.scss */
-.featured-card-link h2 {
-  padding-top: 12px;
-}
-
-/* line 78, sass/site/primary/_posts-and-pages.scss */
+/* line 79, sass/site/primary/_posts-and-pages.scss */
 .call-to-action {
   font-weight: 400;
+  padding: 60px 0;
 }
 
-/* line 82, sass/site/primary/_posts-and-pages.scss */
+/* line 84, sass/site/primary/_posts-and-pages.scss */
 .call-to-action h2 {
   font-family: "lato";
+  font-weight: 300;
+  padding-top: 60px;
 }
 
 /*--------------------------------------------------------------

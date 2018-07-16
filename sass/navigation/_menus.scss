@@ -52,6 +52,8 @@
 	li {
 		// float: left;
 		position: relative;
+		display: inline-block;
+		margin-left: 15px;
 
 		&:hover > a,
 		&.focus > a {
@@ -59,7 +61,7 @@
 	}
 
 	a {
-		display: block;
+		display: inline-block;
 		text-decoration: none;
 	}
 
@@ -81,7 +83,7 @@
 		display: none;
 	}
 	.site-navigation ul {
-		display: block;
+		display: inline-block;
 	}
 }
 

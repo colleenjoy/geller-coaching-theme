@@ -40,6 +40,11 @@
 	padding: 60px 0;
 }
 
+.featured-cards-title {
+	font-family: "lato";
+	margin-bottom: 40px;
+}
+
 .featured-cards {
 	display: flex;
 	justify-content: space-around;
@@ -71,14 +76,13 @@
 
 }
 
-.featured-card-link h2 {
-	padding-top: 7.5px;
-}
-
 .call-to-action {
 	font-weight: 400;
+	padding: 60px 0;
 }
 
 .call-to-action h2 {
 	font-family: "lato";
+	font-weight: 300;
+	padding-top: 60px; 
 }

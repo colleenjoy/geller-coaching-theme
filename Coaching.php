@@ -1,6 +1,6 @@
 <?php
 /**
-Template Name: front-page
+Template Name: coaching-page
  * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
@@ -21,35 +21,36 @@ get_header();
 
             <div class="newsletter" >
                  <!-- wp newsletter message -->
-                <h2 class="newsletter-message" ><?php the_field('newsletter_message')?></h2>
-                <!-- newsletter input (may have to be plugin from CC) -->
+                <h2 class="newsletter-message" >Helping successful people exceed their expectations in business and life… around the globe.</h2>
+
+                <!-- newsletter input (may have to be inline from CC) -->
                 <h2 class="newsletter-input" >Sign up for my newsletter:     big box here      submit </h2>
             </div>
            
             <!-- new area with wp title -->
             <div class="featured-banner" >
-                <h1 class="featured-cards-title" > <?php the_field('cards_title') ?> </h1>
+                <h1 class="featured-cards-title" ></h1>
                 <!-- three boxes with wp messages and button titles -->
                 <div class="featured-cards" >
                     <div class="featured-card" >
-                        <p class="card-text" ><?php the_field('card_text')?></p>
+                        <p class="card-text" >Exceed the limitations you’ve created</p>
                         <!-- link/button text thing -->
                         <div class="featured-card-link" >
-                            <h2><a href="<?php the_field('card_button')?>"> <?php the_field('card_button_text')?></a></h2>
+                            <h2>Business Coaching</h2>
                         </div>
                     </div>
                     <div class="featured-card" >
-                        <p class="card-text" ><?php the_field('card_text_2')?></p>
+                        <p class="card-text" >Help your staff work efficiently and productively</p>
                         <!-- link/button text thing -->
                         <div class="featured-card-link" >
-                            <h2><a href="<?php the_field('card_button_2')?>"> <?php the_field('card_button_text_2')?></a></h2>
+                            <h2>Business Coaching</h2>
                         </div>
                     </div>
                     <div class="featured-card" >
-                        <p class="card-text" ><?php the_field('card_text_3')?></p>
+                        <p class="card-text" >Exceed the limitations you’ve created</p>
                         <!-- link/button text thing -->
                         <div class="featured-card-link" >
-                            <h2><a href="<?php the_field('card_button_3')?>"> <?php the_field('card_button_text_3')?></a></h2>
+                            <h2>Business Coaching</h2>
                         </div>
                     </div>
                 </div>
@@ -57,9 +58,9 @@ get_header();
 
             <!-- other content -->
             <div class="call-to-action" >
-                <h1> <?php the_field('primary_call_to_action') ?> </h1>
+                <h1><!-- get text from wp -->Turn Potential into Performance. <br> NOW.</h1>
             
-                <h2><?php the_field('secondary_call_to_action') ?></h2>
+                <p><!-- get text from wp -->No matter where you live, becoming more powerful is just a phone call away.</p>
             </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
