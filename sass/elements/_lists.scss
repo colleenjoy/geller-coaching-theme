@@ -1,10 +1,11 @@
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 0 -60px;
+	padding: 0;
 }
 
-ul {
-	list-style: disc;
-}
+// ul {
+// 	list-style-image: url('./images/checkmark-circle.svg');
+// }
 
 ol {
 	list-style: decimal;
@@ -14,6 +15,14 @@ li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
+}
+
+li {
+  background: url('./images/checkmark-circle.svg') no-repeat left top; /* <-- change `left` & `top` too for extra control */
+  padding: 3px 0px 15px 60px;
+  /* reset styles (optional): */
+  list-style: none;
+  margin: 0;
 }
 
 dt {

@@ -4,6 +4,50 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
-h2{
+h2 {
 	font-size: 1.5em;
+}
+
+
+
+h3 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-family: "lato";
+	font-size: 1em;
+}
+
+// front page
+
+.call-to-action h2 {
+	font-family: "lato";
+	font-weight: 300;
+	padding-top: 60px; 
+}
+
+// about page
+
+.featured-image-section h2 {
+	text-align: left;
+}
+
+// coaching page
+
+.accented-section h1,
+.list-section h1 {
+	font-family: "lato";
+	font-weight: 600;
+}
+.accented-section h2 {
+	font-family: "lato";
+	font-weight: 300;
+}
+
+.main-section h1 {
+	margin: 0 12% 0 -60px;
+	font-weight: 600;
 }

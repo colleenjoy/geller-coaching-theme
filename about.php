@@ -24,28 +24,38 @@ get_header();
                 <p><?php the_field('full_width_section') ?> </p>
             </div>
 
+            <div class="page-breaker" ></div>
+
             <div class="primary-about" >
                 <h2><?php the_field('full_width_section_title_2') ?></h2>
                 <p><?php the_field('full_width_section_2') ?> </p>
             </div>
 
-            <div class="primary-about" >
-                <h2><?php the_field('full_width_section_title_3') ?></h2>
-                <p><?php the_field('full_width_section_3') ?> </p>
+            <div class="page-breaker" ></div>
+
+            <div class="secondary-about-section" >
+                <h2><?php the_field('half_width_section_title') ?></h2>
+                
+                <div class="secondary-about" >
+                    <div>
+                        <h4><?php the_field('half_width_title') ?></h4>
+                        <p><?php the_field('half_width_text') ?></p>
+                    </div>
+                    <div>
+                        <h4><?php the_field('half_width_title_2') ?></h4>
+                        <p><?php the_field('half_width_text_2') ?></p>
+                    </div>
+                </div>
             </div>
 
-            <div class="secondary-about" >
+            <div class="page-breaker" ></div>
 
+            <div class="featured-image-section" >
+                <h2><?php the_field('featured_image_section_title')?></h2>
+                <img src="<?php the_field('featured_image')?>" alt="">
+                <p><?php the_field('featured_image_text')?></p>
             </div>
            
-            
-
-            <!-- other content -->
-            <div class="call-to-action" >
-                <h1><!-- get text from wp -->Turn Potential into Performance. <br> NOW.</h1>
-            
-                <p><!-- get text from wp -->No matter where you live, becoming more powerful is just a phone call away.</p>
-            </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

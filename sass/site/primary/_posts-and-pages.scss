@@ -23,12 +23,9 @@
 
 // front page stylization
 
-.front-page {
-	text-align: center;
-}
-
 .newsletter {
 	margin: 60px 0;
+	text-align: center;
 }
 
 .newsletter-message {
@@ -38,11 +35,13 @@
 .featured-banner {
 	background-color: #E6E8EB;
 	padding: 60px 0;
+	text-align: center;
 }
 
 .featured-cards-title {
 	font-family: "lato";
 	margin-bottom: 40px;
+	text-align: center;
 }
 
 .featured-cards {
@@ -58,8 +57,6 @@
 }
 
 .card-text {
-	font-weight: 300;
-	font-size: 1.5em;
 	margin: 35px 20px 0 23px;
 	text-align: left;
 }
@@ -79,10 +76,76 @@
 .call-to-action {
 	font-weight: 400;
 	padding: 60px 0;
+	text-align: center;
 }
 
-.call-to-action h2 {
-	font-family: "lato";
-	font-weight: 300;
-	padding-top: 60px; 
+// About Page Template
+
+.about-page {
+	margin: 60px 12%;
+}
+
+.page-breaker {
+	width: 630px;
+	border-bottom: #96A0AB 1px solid;
+	margin: 0px auto;
+}
+
+.primary-about {
+	margin: 30px 0;
+	
+}
+
+.secondary-about-section {
+	margin: 30px 0;
+	
+}
+
+.secondary-about {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.secondary-about div {
+	width: 40%;
+}
+
+.featured-image-section {
+	text-align: center;
+}
+
+.featured-image-section img{
+	width: 250px;
+	height: 300px;
+	margin:  auto;
+}
+
+// Coaching Page Template
+
+.opening-banner {
+	text-align: center;
+	padding: 60px 12%;
+}
+
+.accented-section {
+	background-color: #D5D8DD;
+	padding: 60px 12%;
+}
+
+.main-section,
+.list-section {
+	margin: 60px 12%;
+}
+
+.lists {
+	display: flex;
+	justify-content: space-between;
+}
+
+.closing-banner {
+	background-color: #808C99;
+	padding: 60px 12%;
+	color: #F1F2F4;
+	line-height: 1.25em;
 }
