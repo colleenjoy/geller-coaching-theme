@@ -20,15 +20,13 @@ get_header();
 		<main id="main" class="site-main">
 
             <div class="primary-about" >
-                <h2><?php the_field('full_width_section_title') ?></h2>
-                <p><?php the_field('full_width_section') ?> </p>
+                <?php the_field('full_width_section') ?>
             </div>
 
             <div class="page-breaker" ></div>
 
             <div class="primary-about" >
-                <h2><?php the_field('full_width_section_title_2') ?></h2>
-                <p><?php the_field('full_width_section_2') ?> </p>
+                <?php the_field('full_width_section_2') ?>
             </div>
 
             <div class="page-breaker" ></div>
@@ -38,12 +36,10 @@ get_header();
                 
                 <div class="secondary-about" >
                     <div>
-                        <h4><?php the_field('half_width_title') ?></h4>
-                        <p><?php the_field('half_width_text') ?></p>
+                        <?php the_field('half_width_text') ?>
                     </div>
                     <div>
-                        <h4><?php the_field('half_width_title_2') ?></h4>
-                        <p><?php the_field('half_width_text_2') ?></p>
+                        <?php the_field('half_width_text_2') ?>
                     </div>
                 </div>
             </div>
@@ -51,9 +47,7 @@ get_header();
             <div class="page-breaker" ></div>
 
             <div class="featured-image-section" >
-                <h2><?php the_field('featured_image_section_title')?></h2>
-                <img src="<?php the_field('featured_image')?>" alt="">
-                <p><?php the_field('featured_image_text')?></p>
+                <?php the_field('featured_image_section')?>
             </div>
            
 		</main><!-- #main -->
