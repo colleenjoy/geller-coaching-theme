@@ -24,20 +24,74 @@ function _s_customize_register( $wp_customize ) {
 		'sanitize_callback' => 'sanitize_email',
 	));
 	$wp_customize->add_setting('footer_phone', array(
-		'sanitize_callback' => 'sanitize_',
+		// 'sanitize_callback' => 'sanitize_',
 	));
 	$wp_customize->add_setting('footer_linkedin', array(
-		'sanitize_callback' => 'esc_url_raw',
+		// 'sanitize_callback' => 'esc_url_raw',
 	));
 	$wp_customize->add_setting('footer_facebook', array(
-		'sanitize_callback' => 'esc_url_raw',
+		// 'sanitize_callback' => 'esc_url_raw',
 	));
 	$wp_customize->add_setting('footer_twitter', array(
-		'sanitize_callback' => 'esc_url_raw',
+		// 'sanitize_callback' => 'esc_url_raw',
 	));
 
+	$wp_customize->add_control('footer_email', array(
+		'type' => 'email',
+		'priority' => 10,
+		'section' => 'footer',
+		'label' => __('Email'),
+		'description' => __('Your email address to be displayed in the footer'),
+		'input_attrs' => array(
+			'placeholder' => 'example@gmail.com',
+		),
+	));
 
+	$wp_customize->add_control('footer_phone', array(
+		'type' => 'tel',
+		'priority' => 10,
+		'section' => 'footer',
+		'label' => __('Phone Number'),
+		'description' => __('Your phone number to be displayed in the footer'),
+		'input_attrs' => array(
+			'placeholder' => '(555) 555-5555',
+		),
+	));
 
+	$wp_customize->add_control('footer_linkedin', array(
+		'type' => 'url',
+		'priority' => 10,
+		'section' => 'footer',
+		'label' => __('LinkedIn'),
+		'description' => __('Your LinkedIn profile to be displayed in the footer'),
+		'input_attrs' => array(
+			'placeholder' => '/linkedin-profile',
+		),
+	));
+
+	$wp_customize->add_control('footer_facebook', array(
+		'type' => 'url',
+		'priority' => 10,
+		'section' => 'footer',
+		'label' => __('Facebook'),
+		'description' => __('Your Facebook page to be displayed in the footer'),
+		'input_attrs' => array(
+			'placeholder' => '/facebook-page',
+		),
+	));
+
+	$wp_customize->add_control('footer_twitter', array(
+		'type' => 'url',
+		'priority' => 10,
+		'section' => 'footer',
+		'label' => __('Twitter'),
+		'description' => __('Your Twitter handle to be displayed in the footer'),
+		'input_attrs' => array(
+			'placeholder' => '@twitter-handle',
+		),
+	));
+
+	
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(

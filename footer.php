@@ -17,6 +17,29 @@
 		<!-- five footer pieces -->
 		<div class="footer-links" >
 			<!-- get title and link from wp -->
+			<div>
+				<h1>Email</h1>
+				<small><?php esc_html_e(get_theme_mod('footer_email')); ?></small>
+			</div>
+			<div>
+				<h1>Phone</h1>
+				<small><?php esc_html_e(get_theme_mod('footer_phone')); ?></small>
+			</div>
+			<div>
+				<h1>Linkedin</h1>
+				<small><a href="https://linkedin.com/<?php esc_html_e(get_theme_mod('footer_linkedin')); ?>"> 
+				<?php esc_html_e(get_theme_mod('footer_linkedin')); ?></a></small>
+			</div>
+			<div>
+				<h1>Facebook</h1>
+				<small><a href="https://facebook.com/<?php esc_html_e(get_theme_mod('footer_facebook')); ?>"> 
+				<?php esc_html_e(get_theme_mod('footer_facebook')); ?></a></small>
+			</div>
+			<div>
+				<h1>Twitter</h1>
+				<small><a href="https://twitter.com/<?php esc_html_e(get_theme_mod('footer_twitter')); ?>"> 
+				<?php esc_html_e(get_theme_mod('footer_twitter')); ?></a></small>
+			</div>
 		</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', '_s' ) ); ?>">

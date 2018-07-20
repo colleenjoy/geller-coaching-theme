@@ -1195,6 +1195,27 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+/* line 2, sass/site/primary/_footer.scss */
+.site-footer {
+  padding: 60px;
+}
+
+/* line 6, sass/site/primary/_footer.scss */
+.footer-links {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* line 11, sass/site/primary/_footer.scss */
+.footer-links div {
+  width: 170px;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
