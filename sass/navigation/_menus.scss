@@ -54,6 +54,8 @@
 		position: relative;
 		display: inline-block;
 		margin-left: 15px;
+		background: none;
+		padding: 0;
 
 		&:hover > a,
 		&.focus > a {

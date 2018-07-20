@@ -138,14 +138,22 @@
 	margin: 60px 12%;
 }
 
-.lists {
-	display: flex;
-	justify-content: space-between;
+
+.list li {
+	width: 550px;
+	display: inline-block;
 }
+
 
 .closing-banner {
 	background-color: #808C99;
 	padding: 60px 12%;
 	color: #F1F2F4;
 	line-height: 1.25em;
+}
+
+// Testimonials Page
+
+.testimonials-page {
+	margin: 60px 12%;
 }

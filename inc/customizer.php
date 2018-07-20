@@ -15,6 +15,30 @@ function _s_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
+	$wp_customize->add_section('footer', array(
+		'title' => __('Footer', 'themename'),
+		'priority' => 105, // Before Widgets.
+	));
+
+	$wp_customize->add_setting('footer_email', array(
+		'sanitize_callback' => 'sanitize_email',
+	));
+	$wp_customize->add_setting('footer_phone', array(
+		'sanitize_callback' => 'sanitize_',
+	));
+	$wp_customize->add_setting('footer_linkedin', array(
+		'sanitize_callback' => 'esc_url_raw',
+	));
+	$wp_customize->add_setting('footer_facebook', array(
+		'sanitize_callback' => 'esc_url_raw',
+	));
+	$wp_customize->add_setting('footer_twitter', array(
+		'sanitize_callback' => 'esc_url_raw',
+	));
+
+
+
+
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',

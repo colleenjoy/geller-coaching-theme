@@ -459,24 +459,19 @@ h4 {
 }
 
 /* line 34, sass/typography/_headings.scss */
-.featured-image-section h2 {
-  text-align: left;
-}
-
-/* line 40, sass/typography/_headings.scss */
 .accented-section h1,
 .list-section h1 {
   font-family: "lato";
   font-weight: 600;
 }
 
-/* line 45, sass/typography/_headings.scss */
+/* line 39, sass/typography/_headings.scss */
 .accented-section h2 {
   font-family: "lato";
   font-weight: 300;
 }
 
-/* line 50, sass/typography/_headings.scss */
+/* line 44, sass/typography/_headings.scss */
 .main-section h1 {
   margin: 0 12% 0 -60px;
   font-weight: 600;
@@ -490,27 +485,32 @@ p {
 }
 
 /* line 7, sass/typography/_copy.scss */
-.col-1-2 ul li {
+.list ul li {
   font-size: 1.5em;
   font-weight: 300;
 }
 
 /* line 12, sass/typography/_copy.scss */
+.author p {
+  font-size: .9em;
+}
+
+/* line 16, sass/typography/_copy.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 16, sass/typography/_copy.scss */
+/* line 20, sass/typography/_copy.scss */
 blockquote {
   margin: 0 1.5em;
 }
 
-/* line 20, sass/typography/_copy.scss */
+/* line 24, sass/typography/_copy.scss */
 address {
   margin: 0 0 1.5em;
 }
 
-/* line 24, sass/typography/_copy.scss */
+/* line 28, sass/typography/_copy.scss */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -523,26 +523,26 @@ pre {
   padding: 1.6em;
 }
 
-/* line 35, sass/typography/_copy.scss */
+/* line 39, sass/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
 }
 
-/* line 40, sass/typography/_copy.scss */
+/* line 44, sass/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 45, sass/typography/_copy.scss */
+/* line 49, sass/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
-/* line 50, sass/typography/_copy.scss */
+/* line 54, sass/typography/_copy.scss */
 big {
   font-size: 125%;
 }
@@ -603,14 +603,15 @@ li {
   /* reset styles (optional): */
   list-style: none;
   margin: 0;
+  display: inline-block;
 }
 
-/* line 28, sass/elements/_lists.scss */
+/* line 29, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 32, sass/elements/_lists.scss */
+/* line 33, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
@@ -799,46 +800,48 @@ a:hover, a:active {
   position: relative;
   display: inline-block;
   margin-left: 15px;
+  background: none;
+  padding: 0;
 }
-/* line 63, sass/navigation/_menus.scss */
+/* line 65, sass/navigation/_menus.scss */
 .site-navigation a {
   display: inline-block;
   text-decoration: none;
 }
 
 /* Small menu. */
-/* line 76, sass/navigation/_menus.scss */
+/* line 78, sass/navigation/_menus.scss */
 .menu-toggle,
 .site-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 82, sass/navigation/_menus.scss */
+  /* line 84, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 85, sass/navigation/_menus.scss */
+  /* line 87, sass/navigation/_menus.scss */
   .site-navigation ul {
     display: inline-block;
   }
 }
-/* line 94, sass/navigation/_menus.scss */
+/* line 96, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 99, sass/navigation/_menus.scss */
+/* line 101, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 104, sass/navigation/_menus.scss */
+/* line 106, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1125,18 +1128,23 @@ a:hover, a:active {
   margin: 60px 12%;
 }
 
-/* line 141, sass/site/primary/_posts-and-pages.scss */
-.lists {
-  display: flex;
-  justify-content: space-between;
+/* line 142, sass/site/primary/_posts-and-pages.scss */
+.list li {
+  width: 550px;
+  display: inline-block;
 }
 
-/* line 146, sass/site/primary/_posts-and-pages.scss */
+/* line 148, sass/site/primary/_posts-and-pages.scss */
 .closing-banner {
   background-color: #808C99;
   padding: 60px 12%;
   color: #F1F2F4;
   line-height: 1.25em;
+}
+
+/* line 157, sass/site/primary/_posts-and-pages.scss */
+.testimonials-page {
+  margin: 60px 12%;
 }
 
 /*--------------------------------------------------------------

@@ -22,31 +22,43 @@ get_header();
             <div class="opening-banner">
                 <h2><?php the_field('opening_text')?></h2>
             </div>
-            <div class="accented-section" >
-                <?php the_field('accented_section') ?>
-                
-            </div>
-            
-            <div class="list-section">
-                <h1><?php the_field('list_title') ?></h1>
-                <div class="lists">
-                    <div class="col-1-2">
-                        <?php the_field('list_items') ?>
-                    </div>
-                    <div class="col-1-2">
-                        <?php the_field('list_items_2') ?>
-                    </div>
-                </div>
-            </div>
-            <div class="main-section">
-                <?php the_field('main_text') ?>
-            </div>
+            <!-- add check for radio button to see if main section goes before accented -->
+            <?php 
+            if (get_field('section_ordering') == "Accented Section") {
+                echo '<div class="accented-section">' . get_field('accented_section') . '</div>';
+            } elseif (get_field('section_ordering') == "Main Section") {
+                echo '<div class="main-section">' . get_field('main_text') . '</div>';
+            }
+            ?>
+            <!-- add if statement for list section filled out -->
+            <?php 
+            if (get_field('list_title') && get_field('list_items')){
+            echo '<div class="list-section">
+                <h1>' . get_field('list_title') . '</h1>
+                <div class="list">' .
+                        get_field('list_items') .
+                '</div>
+            </div>';
+            }
+            ?>
+
+            <?php
+            if (get_field('section_ordering') == "Accented Section") {
+                echo '<div class="main-section">' . get_field('main_text') . '</div>';
+            } else {
+                echo '<div class="accented-section">' . get_field('accented_section') . '</div>';
+            }
+            ?>
+
             <div class="closing-banner" >
-                <?php the_field('closing_text') ?>
+                <?php the_field('closing_text')?>
             </div>
             <div class="newsletter">
-                <h1 class="newsletter-title" ><?php the_field('newsletter_message') ?></h1>
+                <h1 class="newsletter-title" ><?php the_field('newsletter_message')?></h1>
                 <!-- newsletter inputs and stuff -->
+            </div>
+            <div class="author">
+                <p><?php the_field('author')?></p>
             </div>
 
 		</main><!-- #main -->
