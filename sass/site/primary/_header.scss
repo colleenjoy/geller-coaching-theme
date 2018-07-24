@@ -6,7 +6,6 @@
 }
 
 .site-title {
-    padding-left: 63%;
     padding-top: 7%;
     font-size: 3.5em;
     line-height: 1em;
@@ -14,12 +13,27 @@
     font-family: "josefin slab";
 }
 
+.title-right {
+    padding-left: 63%;
+}
+
+.title-left {
+    padding-left: 8%;
+}
+
 .site-description {
-    padding-left: 67%;
-    padding-right: 45px;
     font-size: 1.5em;
     font-weight: 400;
     font-family: "josefin slab";
+}
+
+.description-right {
+    padding-left: 67%;
+    padding-right: 45px;
+}
+
+.description-left {
+    padding-left: 12%;
 }
 
 .nav-menu a {

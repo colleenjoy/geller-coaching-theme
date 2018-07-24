@@ -54,7 +54,7 @@ get_header();
                 <?php the_field('closing_text')?>
             </div>
             <div class="newsletter">
-                <h1 class="newsletter-title" ><?php the_field('newsletter_message')?></h1>
+                <h1 class="newsletter-title" ><?php the_field('newsletter_input')?></h1>
                 <!-- newsletter inputs and stuff -->
             </div>
             <div class="author">

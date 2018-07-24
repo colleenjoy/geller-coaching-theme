@@ -28,8 +28,35 @@
 	text-align: center;
 }
 
-.newsletter-message {
+.newsletter-input {
 	font-weight: 600;
+}
+
+.ctct-form-field {
+	display: inline-block;
+	padding-right: 30px;
+	
+}
+
+.ctct-form-field input {
+	border-radius: 0;
+	height: 2.5em;
+	border-color: $color__border-button;
+	color: $color__link;
+	padding-right: 60px;
+}
+
+.ctct-form-field-submit input {
+	background-color: $color__background-button;
+	font-size: 16px;
+	font-family: "josefin slab";
+	padding-right: 40px;
+	padding-left: 40px; 
+}
+
+
+#ctct_usage {
+	display: none;
 }
 
 .featured-banner {
@@ -155,5 +182,15 @@
 // Testimonials Page
 
 .testimonials-page {
+	margin: 60px 12%;
+}
+
+.testimonials-page hr {
+	width: 630px;
+}
+
+// Blog Page
+
+.blog-page {
 	margin: 60px 12%;
 }

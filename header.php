@@ -22,16 +22,34 @@
 </head>
 
 <body <?php body_class(); ?>>
-<style type="text/css">
- .site-header {
-	background-image: url(<?php header_image(); ?>);
- }
-</style>
+<?php 
+	if (is_front_page() || get_field('header_image') == '') :
+	?>
+	<style type="text/css">
+		.site-header {
+			background-image: url(<?php header_image(); ?>);
+		}
+		</style>
+<?php
+	else :
+	?>
+	<style type="text/css">
+		.site-header {
+			background-image: url(<?php the_field('header_image'); ?>);
+		}
+	</style>
+<?php endif; ?>
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<nav id="site-navigation" class="site-navigation">
+			<?php if ( ! is_front_page() ) :
+			?>
+			<big class="site-logo" ><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></big>
+			<?php endif; ?>
+
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
 			<?php
 			wp_nav_menu( array(
@@ -44,20 +62,40 @@
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
+			if ( get_field('header_text_alignment') == 'right' ) :
+				if ( is_front_page() ) :
+					?>
+					<h1 class="site-title title-right"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php
+					$_s_description = get_bloginfo('description', 'display');
+					if ($_s_description || is_customize_preview()):
+					?>
+						<p class="site-description description-right"><?php echo $_s_description; /* WPCS: xss ok. */ ?></p>
+						<?php 
+					endif;
+				else :
+					?>
+					<h1 class="site-title title-right"><?php the_title() ?></h1>
+					<?php
+				endif; 
 			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$_s_description = get_bloginfo( 'description', 'display' );
-			if ( $_s_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $_s_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+				if (is_front_page()):
+					?>
+					<h1 class="site-title title-left"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name');?></a></h1>
+					<?php
+					$_s_description = get_bloginfo('description', 'display');
+					if ($_s_description || is_customize_preview()):
+					?>
+						<p class="site-description description-left"><?php echo $_s_description; /* WPCS: xss ok. */ ?></p>
+						<?php 
+					endif;
+				else:
+					?>
+					<h1 class="site-title title-left"><?php the_title()?></h1>
+					<?php
+				endif;
+			endif; ?>
+				
 		</div><!-- .site-branding -->
 
 	</header><!-- #masthead -->

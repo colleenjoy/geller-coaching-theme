@@ -20,10 +20,8 @@ get_header();
 		<main id="main" class="site-main">
 
             <div class="newsletter" >
-                 <!-- wp newsletter message -->
-                <h2 class="newsletter-message" ><?php the_field('newsletter_message')?></h2>
                 <!-- newsletter input (may have to be plugin from CC) -->
-                <h2 class="newsletter-input" >Sign up for my newsletter:     big box here      submit </h2>
+                <h2 class="newsletter-input" ><?php the_field('newsletter_form') ?></h2>
             </div>
            
             <!-- new area with wp title -->

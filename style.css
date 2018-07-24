@@ -160,13 +160,14 @@ samp {
 /* line 108, sass/_normalize.scss */
 small {
   font-size: 80%;
+  font-weight: 300;
 }
 
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 117, sass/_normalize.scss */
+/* line 118, sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -175,12 +176,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 125, sass/_normalize.scss */
+/* line 126, sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 129, sass/_normalize.scss */
+/* line 130, sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
@@ -190,7 +191,7 @@ sup {
 /**
  * Remove the border on images inside links in IE 10.
  */
-/* line 140, sass/_normalize.scss */
+/* line 141, sass/_normalize.scss */
 img {
   border-style: none;
 }
@@ -201,7 +202,7 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 152, sass/_normalize.scss */
+/* line 153, sass/_normalize.scss */
 button,
 input,
 optgroup,
@@ -221,7 +222,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-/* line 168, sass/_normalize.scss */
+/* line 169, sass/_normalize.scss */
 button,
 input {
   /* 1 */
@@ -232,7 +233,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 178, sass/_normalize.scss */
+/* line 179, sass/_normalize.scss */
 button,
 select {
   /* 1 */
@@ -242,7 +243,7 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 187, sass/_normalize.scss */
+/* line 188, sass/_normalize.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -253,7 +254,7 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 198, sass/_normalize.scss */
+/* line 199, sass/_normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -265,7 +266,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 210, sass/_normalize.scss */
+/* line 211, sass/_normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -276,7 +277,7 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
-/* line 221, sass/_normalize.scss */
+/* line 222, sass/_normalize.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -287,7 +288,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *		`fieldset` elements in all browsers.
  */
-/* line 232, sass/_normalize.scss */
+/* line 233, sass/_normalize.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -306,7 +307,7 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 245, sass/_normalize.scss */
+/* line 246, sass/_normalize.scss */
 progress {
   vertical-align: baseline;
 }
@@ -314,7 +315,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
-/* line 253, sass/_normalize.scss */
+/* line 254, sass/_normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -323,7 +324,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-/* line 262, sass/_normalize.scss */
+/* line 263, sass/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -335,7 +336,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 272, sass/_normalize.scss */
+/* line 273, sass/_normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -345,7 +346,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 282, sass/_normalize.scss */
+/* line 283, sass/_normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -356,7 +357,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-/* line 291, sass/_normalize.scss */
+/* line 292, sass/_normalize.scss */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -365,7 +366,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 300, sass/_normalize.scss */
+/* line 301, sass/_normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -378,7 +379,7 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
-/* line 312, sass/_normalize.scss */
+/* line 313, sass/_normalize.scss */
 details {
   display: block;
 }
@@ -386,7 +387,7 @@ details {
 /*
  * Add the correct display in all browsers.
  */
-/* line 320, sass/_normalize.scss */
+/* line 321, sass/_normalize.scss */
 summary {
   display: list-item;
 }
@@ -396,7 +397,7 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
-/* line 331, sass/_normalize.scss */
+/* line 332, sass/_normalize.scss */
 template {
   display: none;
 }
@@ -404,7 +405,7 @@ template {
 /**
  * Add the correct display in IE 10.
  */
-/* line 339, sass/_normalize.scss */
+/* line 340, sass/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -645,9 +646,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: #B9BFC7;
   border-radius: 3px;
-  background: #e6e6e6;
+  background: #B9BFC7;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
@@ -752,6 +753,11 @@ a:hover, a:active {
   outline: 0;
 }
 
+/* line 22, sass/navigation/_links.scss */
+.site-footer a {
+  color: white;
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -769,33 +775,12 @@ a:hover, a:active {
   list-style: none;
   margin: 0 7%;
 }
-/* line 13, sass/navigation/_menus.scss */
-.site-navigation ul ul {
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 100%;
-  left: -999em;
-  z-index: 99999;
-}
-/* line 21, sass/navigation/_menus.scss */
-.site-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-/* line 27, sass/navigation/_menus.scss */
-.site-navigation ul ul li:hover > ul, .site-navigation ul ul li.focus > ul {
-  left: 100%;
-}
-/* line 33, sass/navigation/_menus.scss */
-.site-navigation ul ul a {
-  width: 200px;
-}
-/* line 46, sass/navigation/_menus.scss */
+/* line 15, sass/navigation/_menus.scss */
 .site-navigation ul li:hover > ul,
 .site-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 52, sass/navigation/_menus.scss */
+/* line 21, sass/navigation/_menus.scss */
 .site-navigation li {
   position: relative;
   display: inline-block;
@@ -803,45 +788,45 @@ a:hover, a:active {
   background: none;
   padding: 0;
 }
-/* line 65, sass/navigation/_menus.scss */
+/* line 34, sass/navigation/_menus.scss */
 .site-navigation a {
   display: inline-block;
   text-decoration: none;
 }
 
 /* Small menu. */
-/* line 78, sass/navigation/_menus.scss */
+/* line 47, sass/navigation/_menus.scss */
 .menu-toggle,
 .site-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 84, sass/navigation/_menus.scss */
+  /* line 53, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 87, sass/navigation/_menus.scss */
+  /* line 56, sass/navigation/_menus.scss */
   .site-navigation ul {
     display: inline-block;
   }
 }
-/* line 96, sass/navigation/_menus.scss */
+/* line 65, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 101, sass/navigation/_menus.scss */
+/* line 70, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 106, sass/navigation/_menus.scss */
+/* line 75, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1007,31 +992,60 @@ a:hover, a:active {
 }
 
 /* line 31, sass/site/primary/_posts-and-pages.scss */
-.newsletter-message {
+.newsletter-input {
   font-weight: 600;
 }
 
 /* line 35, sass/site/primary/_posts-and-pages.scss */
+.ctct-form-field {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+/* line 41, sass/site/primary/_posts-and-pages.scss */
+.ctct-form-field input {
+  border-radius: 0;
+  height: 2.5em;
+  border-color: #B9BFC7;
+  color: #4A4A4A;
+  padding-right: 60px;
+}
+
+/* line 49, sass/site/primary/_posts-and-pages.scss */
+.ctct-form-field-submit input {
+  background-color: #B9BFC7;
+  font-size: 16px;
+  font-family: "josefin slab";
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+/* line 58, sass/site/primary/_posts-and-pages.scss */
+#ctct_usage {
+  display: none;
+}
+
+/* line 62, sass/site/primary/_posts-and-pages.scss */
 .featured-banner {
   background-color: #E6E8EB;
   padding: 60px 0;
   text-align: center;
 }
 
-/* line 41, sass/site/primary/_posts-and-pages.scss */
+/* line 68, sass/site/primary/_posts-and-pages.scss */
 .featured-cards-title {
   font-family: "lato";
   margin-bottom: 40px;
   text-align: center;
 }
 
-/* line 47, sass/site/primary/_posts-and-pages.scss */
+/* line 74, sass/site/primary/_posts-and-pages.scss */
 .featured-cards {
   display: flex;
   justify-content: space-around;
 }
 
-/* line 52, sass/site/primary/_posts-and-pages.scss */
+/* line 79, sass/site/primary/_posts-and-pages.scss */
 .featured-card {
   border: #808C99 2px solid;
   height: 275px;
@@ -1039,13 +1053,13 @@ a:hover, a:active {
   position: relative;
 }
 
-/* line 59, sass/site/primary/_posts-and-pages.scss */
+/* line 86, sass/site/primary/_posts-and-pages.scss */
 .card-text {
   margin: 35px 20px 0 23px;
   text-align: left;
 }
 
-/* line 64, sass/site/primary/_posts-and-pages.scss */
+/* line 91, sass/site/primary/_posts-and-pages.scss */
 .featured-card-link {
   background-color: #B9BFC7;
   height: 75px;
@@ -1057,84 +1071,84 @@ a:hover, a:active {
   bottom: 25px;
 }
 
-/* line 76, sass/site/primary/_posts-and-pages.scss */
+/* line 103, sass/site/primary/_posts-and-pages.scss */
 .call-to-action {
   font-weight: 400;
   padding: 60px 0;
   text-align: center;
 }
 
-/* line 84, sass/site/primary/_posts-and-pages.scss */
+/* line 111, sass/site/primary/_posts-and-pages.scss */
 .about-page {
   margin: 60px 12%;
 }
 
-/* line 88, sass/site/primary/_posts-and-pages.scss */
+/* line 115, sass/site/primary/_posts-and-pages.scss */
 .page-breaker {
   width: 630px;
   border-bottom: #96A0AB 1px solid;
   margin: 0px auto;
 }
 
-/* line 94, sass/site/primary/_posts-and-pages.scss */
+/* line 121, sass/site/primary/_posts-and-pages.scss */
 .primary-about {
   margin: 30px 0;
 }
 
-/* line 99, sass/site/primary/_posts-and-pages.scss */
+/* line 126, sass/site/primary/_posts-and-pages.scss */
 .secondary-about-section {
   margin: 30px 0;
 }
 
-/* line 104, sass/site/primary/_posts-and-pages.scss */
+/* line 131, sass/site/primary/_posts-and-pages.scss */
 .secondary-about {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
 }
 
-/* line 110, sass/site/primary/_posts-and-pages.scss */
+/* line 137, sass/site/primary/_posts-and-pages.scss */
 .secondary-about div {
   width: 40%;
 }
 
-/* line 114, sass/site/primary/_posts-and-pages.scss */
+/* line 141, sass/site/primary/_posts-and-pages.scss */
 .featured-image-section {
   text-align: center;
 }
 
-/* line 118, sass/site/primary/_posts-and-pages.scss */
+/* line 145, sass/site/primary/_posts-and-pages.scss */
 .featured-image-section img {
   width: 250px;
   height: 300px;
   margin: auto;
 }
 
-/* line 126, sass/site/primary/_posts-and-pages.scss */
+/* line 153, sass/site/primary/_posts-and-pages.scss */
 .opening-banner {
   text-align: center;
   padding: 60px 12%;
 }
 
-/* line 131, sass/site/primary/_posts-and-pages.scss */
+/* line 158, sass/site/primary/_posts-and-pages.scss */
 .accented-section {
   background-color: #D5D8DD;
   padding: 60px 12%;
 }
 
-/* line 136, sass/site/primary/_posts-and-pages.scss */
+/* line 163, sass/site/primary/_posts-and-pages.scss */
 .main-section,
 .list-section {
   margin: 60px 12%;
 }
 
-/* line 142, sass/site/primary/_posts-and-pages.scss */
+/* line 169, sass/site/primary/_posts-and-pages.scss */
 .list li {
   width: 550px;
   display: inline-block;
 }
 
-/* line 148, sass/site/primary/_posts-and-pages.scss */
+/* line 175, sass/site/primary/_posts-and-pages.scss */
 .closing-banner {
   background-color: #808C99;
   padding: 60px 12%;
@@ -1142,8 +1156,18 @@ a:hover, a:active {
   line-height: 1.25em;
 }
 
-/* line 157, sass/site/primary/_posts-and-pages.scss */
+/* line 184, sass/site/primary/_posts-and-pages.scss */
 .testimonials-page {
+  margin: 60px 12%;
+}
+
+/* line 188, sass/site/primary/_posts-and-pages.scss */
+.testimonials-page hr {
+  width: 630px;
+}
+
+/* line 194, sass/site/primary/_posts-and-pages.scss */
+.blog-page {
   margin: 60px 12%;
 }
 
@@ -1172,7 +1196,6 @@ a:hover, a:active {
 
 /* line 8, sass/site/primary/_header.scss */
 .site-title {
-  padding-left: 63%;
   padding-top: 7%;
   font-size: 3.5em;
   line-height: 1em;
@@ -1180,16 +1203,35 @@ a:hover, a:active {
   font-family: "josefin slab";
 }
 
-/* line 17, sass/site/primary/_header.scss */
+/* line 16, sass/site/primary/_header.scss */
+.title-right {
+  padding-left: 63%;
+}
+
+/* line 20, sass/site/primary/_header.scss */
+.title-left {
+  padding-left: 8%;
+}
+
+/* line 24, sass/site/primary/_header.scss */
 .site-description {
-  padding-left: 67%;
-  padding-right: 45px;
   font-size: 1.5em;
   font-weight: 400;
   font-family: "josefin slab";
 }
 
-/* line 25, sass/site/primary/_header.scss */
+/* line 30, sass/site/primary/_header.scss */
+.description-right {
+  padding-left: 67%;
+  padding-right: 45px;
+}
+
+/* line 35, sass/site/primary/_header.scss */
+.description-left {
+  padding-left: 12%;
+}
+
+/* line 39, sass/site/primary/_header.scss */
 .nav-menu a {
   color: white;
 }
@@ -1200,19 +1242,27 @@ a:hover, a:active {
 /* line 2, sass/site/primary/_footer.scss */
 .site-footer {
   padding: 60px;
+  background-color: #4A4A4A;
+  color: white;
 }
 
-/* line 6, sass/site/primary/_footer.scss */
+/* line 8, sass/site/primary/_footer.scss */
 .footer-links {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 60px;
 }
 
-/* line 11, sass/site/primary/_footer.scss */
+/* line 15, sass/site/primary/_footer.scss */
 .footer-links div {
   width: 170px;
   text-align: center;
+}
+
+/* line 20, sass/site/primary/_footer.scss */
+.footer-links h1 {
+  margin-bottom: 40px;
 }
 
 /*--------------------------------------------------------------
