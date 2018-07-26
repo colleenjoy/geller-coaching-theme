@@ -6,11 +6,19 @@
 }
 
 .site-title {
-    padding-top: 7%;
+    padding-top: 10%;
     font-size: 3.5em;
     line-height: 1em;
     margin-bottom: .3em;
     font-family: "josefin slab";
+}
+
+.site-title .site-title-home {
+    color: $color__title-home;
+}
+
+.site-title {
+    color: $color__title;
 }
 
 .title-right {
@@ -34,8 +42,4 @@
 
 .description-left {
     padding-left: 12%;
-}
-
-.nav-menu a {
-    color: $color__menu-link;
 }

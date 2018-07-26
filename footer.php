@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package _s
+ * @package Coach
  */
 
 ?>
@@ -42,16 +42,16 @@
 			</div>
 		</div>
 		<div class="site-info">
-			<small><a href="<?php echo esc_url( __( 'https://wordpress.org/', '_s' ) ); ?>">
+			<small><a href="<?php echo esc_url( __( 'https://wordpress.org/', 'coach' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', '_s' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'coach' ), 'WordPress' );
 				?>
 			</a></small>
 			<span class="sep"> | </span>
 				<small><?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="https://automattic.com/">Automattic</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'coach' ), 'coach', '<a href="https: //colleen-higgins-designs.github.io/portfolio/">Colleen Higgins Designs</a>' );
 				?></small>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

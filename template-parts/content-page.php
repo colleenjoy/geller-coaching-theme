@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package _s
+ * @package Coach
  */
 
 ?>
@@ -14,7 +14,7 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php _s_post_thumbnail(); ?>
+	<?php coach_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -22,7 +22,7 @@
 
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'coach' ),
 			'after'  => '</div>',
 		) );
 		?>
@@ -31,22 +31,23 @@
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', '_s' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
+			// edit_post_link(
+			// 	sprintf(
+			// 		wp_kses(
+			// 			/* translators: %s: Name of current post. Only visible to screen readers */
+			// 			__( 'Edit <span class="screen-reader-text">%s</span>', 'coach' ),
+			// 			array(
+			// 				'span' => array(
+			// 					'class' => array(),
+			// 				),
+			// 			)
+			// 		),
+			// 		get_the_title()
+			// 	),
+			// 	'<span class="edit-link">',
+			// 	'</span>'
+			// );
+			coach_entry_footer();
 			?>
 		</footer><!-- .entry-footer -->
 	<?php endif; ?>

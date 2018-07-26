@@ -10,7 +10,7 @@ Template Name: blog-page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package _s
+ * @package Coach
  */
 
 get_header();

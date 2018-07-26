@@ -1,5 +1,5 @@
 /*
-Theme Name: _s
+Theme Name: Coach
 
 WooCommerce styles override
 */
@@ -555,16 +555,16 @@ p.no-comments {
  * WooCommerce Price Filter
  */
 /* line 5, sass/shop/_widgets.scss */
-.widget_price_filter .price_slider {
+.widget_price_filter .price_sliderider {
   margin-bottom: 1.5em;
 }
 /* line 9, sass/shop/_widgets.scss */
-.widget_price_filter .price_slider_amount {
+.widget_price_filter .price_sliderider_amount {
   text-align: right;
   line-height: 2.4em;
 }
 /* line 13, sass/shop/_widgets.scss */
-.widget_price_filter .price_slider_amount .button {
+.widget_price_filter .price_sliderider_amount .button {
   float: left;
 }
 /* line 18, sass/shop/_widgets.scss */
@@ -602,7 +602,7 @@ p.no-comments {
   background: #4A4A4A;
 }
 /* line 53, sass/shop/_widgets.scss */
-.widget_price_filter .price_slider_wrapper .ui-widget-content {
+.widget_price_filter .price_sliderider_wrapper .ui-widget-content {
   background: rgba(0, 0, 0, 0.1);
 }
 /* line 57, sass/shop/_widgets.scss */

@@ -10,7 +10,7 @@ Template Name: coaching-page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package _s
+ * @package Coach
  */
 
 get_header();
@@ -19,9 +19,13 @@ get_header();
 	<div id="primary" class="no-sidebar content-area coaching-page">
 		<main id="main" class="site-main">
 
-            <div class="opening-banner">
-                <h2><?php the_field('opening_text')?></h2>
-            </div>
+            <?php if (get_field('opening_text')) :
+            ?>
+                <div class="opening-banner">
+                    <h2><?php the_field('opening_text')?></h2>
+                </div>
+            <?php endif; ?>
+
             <!-- add check for radio button to see if main section goes before accented -->
             <?php 
             if (get_field('section_ordering') == "Accented Section") {
@@ -53,13 +57,13 @@ get_header();
             <div class="closing-banner" >
                 <?php the_field('closing_text')?>
             </div>
-            <div class="newsletter">
-                <h1 class="newsletter-title" ><?php the_field('newsletter_input')?></h1>
-                <!-- newsletter inputs and stuff -->
-            </div>
-            <div class="author">
-                <p><?php the_field('author')?></p>
-            </div>
+            <?php if (get_field('newsletter_form')) :
+            ?>
+                <div class="newsletter">
+                    <h1 class="newsletter-title" ><?php the_field('newsletter_form')?></h1>
+                    <!-- newsletter inputs and stuff -->
+                </div>
+            <?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -22,3 +22,15 @@ a {
 .site-footer a{
 	color: $color__text-footer;
 }
+
+.site-logo a {
+	color: $color__menu-link;
+	font-family: "josefin slab";
+	&:hover {
+		color: $color__menu-link-hover;
+	}
+}
+
+.nav-links {
+	margin: 5% 0;
+}

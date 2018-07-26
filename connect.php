@@ -1,6 +1,6 @@
 <?php
 /**
-Template Name: testimonials-page
+Template Name: connect-page
  * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
@@ -16,10 +16,10 @@ Template Name: testimonials-page
 get_header();
 ?>
 
-	<div id="primary" class="no-sidebar content-area testimonials-page">
-		<main id="main" class="site-main">
+	<div id="primary" class="no-sidebar content-area connect-page">
+		<main id="main" class="site-main ">
 
-            <?php the_field('testimonials') ?>
+            <?php the_field('connect_form') ?>
            
 		</main><!-- #main -->
 	</div><!-- #primary -->

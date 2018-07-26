@@ -3,18 +3,19 @@ ul, ol {
 	padding: 0;
 }
 
-// ul {
-// 	list-style-image: url('./images/checkmark-circle.svg');
-// }
-
 ol {
 	list-style: decimal;
+	
 }
 
 li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
+}
+
+ol li {
+	background: none;
 }
 
 li {
@@ -33,3 +34,8 @@ dt {
 dd {
 	margin: 0 1.5em 1.5em;
 }
+
+.widget-area ul li{
+		background: none;
+		display: block;
+	}

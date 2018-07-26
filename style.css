@@ -1,19 +1,20 @@
+@charset "UTF-8";
 /*!
-Theme Name: _s
+Theme Name: Coach
 Theme URI: https://underscores.me/
 Author: Automattic
 Author URI: https://automattic.com/
-Description: Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Description: Hi. I'm a starter theme called <code>Coach</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: _s
+Text Domain: Coach
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-_s is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Coach is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -26,6 +27,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Typography
 # Elements
 # Forms
+# Layout
 # Navigation
 	## Links
 	## Menus
@@ -125,10 +127,6 @@ a {
 abbr[title] {
   border-bottom: none;
   /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
 }
 
 /**
@@ -584,19 +582,24 @@ ul, ol {
   padding: 0;
 }
 
-/* line 10, sass/elements/_lists.scss */
+/* line 6, sass/elements/_lists.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 14, sass/elements/_lists.scss */
+/* line 11, sass/elements/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
-/* line 20, sass/elements/_lists.scss */
+/* line 17, sass/elements/_lists.scss */
+ol li {
+  background: none;
+}
+
+/* line 21, sass/elements/_lists.scss */
 li {
   background: url("./images/checkmark-circle.svg") no-repeat left top;
   /* <-- change `left` & `top` too for extra control */
@@ -607,14 +610,20 @@ li {
   display: inline-block;
 }
 
-/* line 29, sass/elements/_lists.scss */
+/* line 30, sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 33, sass/elements/_lists.scss */
+/* line 34, sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
+}
+
+/* line 38, sass/elements/_lists.scss */
+.widget-area ul li {
+  background: none;
+  display: block;
 }
 
 /* line 24, sass/elements/_elements.scss */
@@ -726,6 +735,52 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/* line 1, sass/layout/_content-sidebar.scss */
+.content-sidebar {
+  width: 50%;
+  display: inline-block;
+}
+/* line 13, sass/layout/_content-sidebar.scss */
+.content-sidebar .site-content .widget-area {
+  float: right;
+  overflow: hidden;
+  width: 25%;
+}
+/* line 19, sass/layout/_content-sidebar.scss */
+.content-sidebar .site-footer {
+  clear: both;
+  width: 100%;
+}
+
+/* line 26, sass/layout/_content-sidebar.scss */
+.widget-area {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  margin: 60px 0 20px 5%;
+  padding: 20px;
+  background-color: #D5D8DD;
+}
+
+/* line 35, sass/layout/_content-sidebar.scss */
+.entry-footer span {
+  display: block;
+}
+
+/* line 2, sass/layout/_no-sidebar.scss */
+.no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 8, sass/layout/_no-sidebar.scss */
+.no-sidebar .site-main {
+  margin-right: 0;
+}
+
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -758,6 +813,21 @@ a:hover, a:active {
   color: white;
 }
 
+/* line 26, sass/navigation/_links.scss */
+.site-logo a {
+  color: white;
+  font-family: "josefin slab";
+}
+/* line 29, sass/navigation/_links.scss */
+.site-logo a:hover {
+  color: #D5D8DD;
+}
+
+/* line 34, sass/navigation/_links.scss */
+.nav-links {
+  margin: 5% 0;
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -767,20 +837,33 @@ a:hover, a:active {
   display: block;
   text-align: right;
   width: 100%;
+}
+/* line 7, sass/navigation/_menus.scss */
+.site-navigation .site-logo {
+  display: inline-block;
+  text-align: left;
+  font-size: 2em;
+  line-height: 1em;
+  width: 100px;
+}
+/* line 15, sass/navigation/_menus.scss */
+.site-navigation div {
+  width: 85%;
+  display: inline-block;
   padding-top: 60px;
 }
-/* line 8, sass/navigation/_menus.scss */
+/* line 21, sass/navigation/_menus.scss */
 .site-navigation ul {
   display: none;
   list-style: none;
   margin: 0 7%;
 }
-/* line 15, sass/navigation/_menus.scss */
+/* line 28, sass/navigation/_menus.scss */
 .site-navigation ul li:hover > ul,
 .site-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 21, sass/navigation/_menus.scss */
+/* line 34, sass/navigation/_menus.scss */
 .site-navigation li {
   position: relative;
   display: inline-block;
@@ -788,51 +871,73 @@ a:hover, a:active {
   background: none;
   padding: 0;
 }
-/* line 34, sass/navigation/_menus.scss */
+/* line 47, sass/navigation/_menus.scss */
 .site-navigation a {
   display: inline-block;
   text-decoration: none;
 }
 
+/* line 59, sass/navigation/_menus.scss */
+.nav-menu a {
+  color: white;
+}
+
+/* line 64, sass/navigation/_menus.scss */
+.nav-menu a:hover {
+  color: #D5D8DD;
+}
+
 /* Small menu. */
-/* line 47, sass/navigation/_menus.scss */
+/* line 70, sass/navigation/_menus.scss */
 .menu-toggle,
 .site-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 53, sass/navigation/_menus.scss */
+  /* line 76, sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 56, sass/navigation/_menus.scss */
+  /* line 79, sass/navigation/_menus.scss */
   .site-navigation ul {
     display: inline-block;
   }
 }
-/* line 65, sass/navigation/_menus.scss */
+/* line 88, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 70, sass/navigation/_menus.scss */
+/* line 93, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 75, sass/navigation/_menus.scss */
+/* line 96, sass/navigation/_menus.scss */
+.comment-navigation .nav-previous:before,
+.posts-navigation .nav-previous:before,
+.post-navigation .nav-previous:before {
+  content: "← ";
+}
+/* line 101, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
   text-align: right;
   width: 50%;
+}
+/* line 105, sass/navigation/_menus.scss */
+.comment-navigation .nav-next:after,
+.posts-navigation .nav-next:after,
+.post-navigation .nav-next:after {
+  content: " →";
 }
 
 /*--------------------------------------------------------------
@@ -999,7 +1104,6 @@ a:hover, a:active {
 /* line 35, sass/site/primary/_posts-and-pages.scss */
 .ctct-form-field {
   display: inline-block;
-  padding-right: 30px;
 }
 
 /* line 41, sass/site/primary/_posts-and-pages.scss */
@@ -1008,44 +1112,46 @@ a:hover, a:active {
   height: 2.5em;
   border-color: #B9BFC7;
   color: #4A4A4A;
-  padding-right: 60px;
+  width: 50%;
 }
 
 /* line 49, sass/site/primary/_posts-and-pages.scss */
-.ctct-form-field-submit input {
+.ctct-form .ctct-form-field-submit input {
   background-color: #B9BFC7;
   font-size: 16px;
   font-family: "josefin slab";
   padding-right: 40px;
-  padding-left: 40px;
+  padding-left: 30px;
+  width: 110px;
+  text-align: center;
 }
 
-/* line 58, sass/site/primary/_posts-and-pages.scss */
+/* line 60, sass/site/primary/_posts-and-pages.scss */
 #ctct_usage {
   display: none;
 }
 
-/* line 62, sass/site/primary/_posts-and-pages.scss */
+/* line 64, sass/site/primary/_posts-and-pages.scss */
 .featured-banner {
   background-color: #E6E8EB;
   padding: 60px 0;
   text-align: center;
 }
 
-/* line 68, sass/site/primary/_posts-and-pages.scss */
+/* line 70, sass/site/primary/_posts-and-pages.scss */
 .featured-cards-title {
   font-family: "lato";
   margin-bottom: 40px;
   text-align: center;
 }
 
-/* line 74, sass/site/primary/_posts-and-pages.scss */
+/* line 76, sass/site/primary/_posts-and-pages.scss */
 .featured-cards {
   display: flex;
   justify-content: space-around;
 }
 
-/* line 79, sass/site/primary/_posts-and-pages.scss */
+/* line 81, sass/site/primary/_posts-and-pages.scss */
 .featured-card {
   border: #808C99 2px solid;
   height: 275px;
@@ -1053,13 +1159,13 @@ a:hover, a:active {
   position: relative;
 }
 
-/* line 86, sass/site/primary/_posts-and-pages.scss */
+/* line 88, sass/site/primary/_posts-and-pages.scss */
 .card-text {
   margin: 35px 20px 0 23px;
   text-align: left;
 }
 
-/* line 91, sass/site/primary/_posts-and-pages.scss */
+/* line 93, sass/site/primary/_posts-and-pages.scss */
 .featured-card-link {
   background-color: #B9BFC7;
   height: 75px;
@@ -1071,84 +1177,87 @@ a:hover, a:active {
   bottom: 25px;
 }
 
-/* line 103, sass/site/primary/_posts-and-pages.scss */
+/* line 105, sass/site/primary/_posts-and-pages.scss */
 .call-to-action {
   font-weight: 400;
   padding: 60px 0;
   text-align: center;
 }
 
-/* line 111, sass/site/primary/_posts-and-pages.scss */
+/* line 113, sass/site/primary/_posts-and-pages.scss */
 .about-page {
   margin: 60px 12%;
 }
 
-/* line 115, sass/site/primary/_posts-and-pages.scss */
+/* line 117, sass/site/primary/_posts-and-pages.scss */
 .page-breaker {
-  width: 630px;
-  border-bottom: #96A0AB 1px solid;
-  margin: 0px auto;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #fff, #4A4A4A, #fff);
+  background-image: -moz-linear-gradient(left, #fff, #4A4A4A, #fff);
+  background-image: -ms-linear-gradient(left, #fff, #4A4A4A, #fff);
+  background-image: -o-linear-gradient(left, #fff, #4A4A4A, #fff);
 }
 
-/* line 121, sass/site/primary/_posts-and-pages.scss */
+/* line 126, sass/site/primary/_posts-and-pages.scss */
 .primary-about {
   margin: 30px 0;
 }
 
-/* line 126, sass/site/primary/_posts-and-pages.scss */
+/* line 131, sass/site/primary/_posts-and-pages.scss */
 .secondary-about-section {
   margin: 30px 0;
 }
 
-/* line 131, sass/site/primary/_posts-and-pages.scss */
+/* line 136, sass/site/primary/_posts-and-pages.scss */
 .secondary-about {
   display: inline-flex;
   justify-content: space-between;
   width: 100%;
 }
 
-/* line 137, sass/site/primary/_posts-and-pages.scss */
+/* line 142, sass/site/primary/_posts-and-pages.scss */
 .secondary-about div {
   width: 40%;
 }
 
-/* line 141, sass/site/primary/_posts-and-pages.scss */
+/* line 146, sass/site/primary/_posts-and-pages.scss */
 .featured-image-section {
   text-align: center;
 }
 
-/* line 145, sass/site/primary/_posts-and-pages.scss */
+/* line 150, sass/site/primary/_posts-and-pages.scss */
 .featured-image-section img {
   width: 250px;
   height: 300px;
   margin: auto;
 }
 
-/* line 153, sass/site/primary/_posts-and-pages.scss */
+/* line 158, sass/site/primary/_posts-and-pages.scss */
 .opening-banner {
   text-align: center;
   padding: 60px 12%;
 }
 
-/* line 158, sass/site/primary/_posts-and-pages.scss */
+/* line 163, sass/site/primary/_posts-and-pages.scss */
 .accented-section {
   background-color: #D5D8DD;
   padding: 60px 12%;
 }
 
-/* line 163, sass/site/primary/_posts-and-pages.scss */
+/* line 168, sass/site/primary/_posts-and-pages.scss */
 .main-section,
 .list-section {
   margin: 60px 12%;
 }
 
-/* line 169, sass/site/primary/_posts-and-pages.scss */
+/* line 174, sass/site/primary/_posts-and-pages.scss */
 .list li {
   width: 550px;
   display: inline-block;
 }
 
-/* line 175, sass/site/primary/_posts-and-pages.scss */
+/* line 180, sass/site/primary/_posts-and-pages.scss */
 .closing-banner {
   background-color: #808C99;
   padding: 60px 12%;
@@ -1156,19 +1265,56 @@ a:hover, a:active {
   line-height: 1.25em;
 }
 
-/* line 184, sass/site/primary/_posts-and-pages.scss */
+/* line 189, sass/site/primary/_posts-and-pages.scss */
 .testimonials-page {
   margin: 60px 12%;
 }
 
-/* line 188, sass/site/primary/_posts-and-pages.scss */
-.testimonials-page hr {
-  width: 630px;
+/* line 193, sass/site/primary/_posts-and-pages.scss */
+.testimonials-page p,
+.testimonials-page h4 {
+  margin: 3% 0;
 }
 
-/* line 194, sass/site/primary/_posts-and-pages.scss */
+/* line 198, sass/site/primary/_posts-and-pages.scss */
+.testimonials-page hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #fff, #4A4A4A, #fff);
+  background-image: -moz-linear-gradient(left, #fff, #4A4A4A, #fff);
+  background-image: -ms-linear-gradient(left, #fff, #4A4A4A, #fff);
+  background-image: -o-linear-gradient(left, #fff, #4A4A4A, #fff);
+  margin: 5% 0;
+}
+
+/* line 210, sass/site/primary/_posts-and-pages.scss */
 .blog-page {
-  margin: 60px 12%;
+  margin-top: 60px;
+  margin-left: 12%;
+}
+
+/* line 214, sass/site/primary/_posts-and-pages.scss */
+.blog-page hr {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #fff, #4A4A4A, #fff);
+  background-image: -moz-linear-gradient(left, #fff, #4A4A4A, #fff);
+  background-image: -ms-linear-gradient(left, #fff, #4A4A4A, #fff);
+  background-image: -o-linear-gradient(left, #fff, #4A4A4A, #fff);
+}
+
+/* line 225, sass/site/primary/_posts-and-pages.scss */
+.connect-page {
+  margin: 60px auto;
+  width: 500px;
+}
+/* line 228, sass/site/primary/_posts-and-pages.scss */
+.connect-page .ctct-form-field {
+  display: block;
+}
+/* line 231, sass/site/primary/_posts-and-pages.scss */
+.connect-page .ctct-textarea {
+  height: 200px;
 }
 
 /*--------------------------------------------------------------
@@ -1196,7 +1342,7 @@ a:hover, a:active {
 
 /* line 8, sass/site/primary/_header.scss */
 .site-title {
-  padding-top: 7%;
+  padding-top: 10%;
   font-size: 3.5em;
   line-height: 1em;
   margin-bottom: .3em;
@@ -1204,36 +1350,41 @@ a:hover, a:active {
 }
 
 /* line 16, sass/site/primary/_header.scss */
+.site-title .site-title-home {
+  color: #4A4A4A;
+}
+
+/* line 20, sass/site/primary/_header.scss */
+.site-title {
+  color: white;
+}
+
+/* line 24, sass/site/primary/_header.scss */
 .title-right {
   padding-left: 63%;
 }
 
-/* line 20, sass/site/primary/_header.scss */
+/* line 28, sass/site/primary/_header.scss */
 .title-left {
   padding-left: 8%;
 }
 
-/* line 24, sass/site/primary/_header.scss */
+/* line 32, sass/site/primary/_header.scss */
 .site-description {
   font-size: 1.5em;
   font-weight: 400;
   font-family: "josefin slab";
 }
 
-/* line 30, sass/site/primary/_header.scss */
+/* line 38, sass/site/primary/_header.scss */
 .description-right {
   padding-left: 67%;
   padding-right: 45px;
 }
 
-/* line 35, sass/site/primary/_header.scss */
+/* line 43, sass/site/primary/_header.scss */
 .description-left {
   padding-left: 12%;
-}
-
-/* line 39, sass/site/primary/_header.scss */
-.nav-menu a {
-  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -1241,12 +1392,13 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 /* line 2, sass/site/primary/_footer.scss */
 .site-footer {
-  padding: 60px;
+  padding: 60px 60px 20px 60px;
   background-color: #4A4A4A;
   color: white;
+  text-align: center;
 }
 
-/* line 8, sass/site/primary/_footer.scss */
+/* line 9, sass/site/primary/_footer.scss */
 .footer-links {
   display: inline-flex;
   justify-content: space-between;
@@ -1254,13 +1406,13 @@ a:hover, a:active {
   margin-bottom: 60px;
 }
 
-/* line 15, sass/site/primary/_footer.scss */
+/* line 16, sass/site/primary/_footer.scss */
 .footer-links div {
   width: 170px;
   text-align: center;
 }
 
-/* line 20, sass/site/primary/_footer.scss */
+/* line 21, sass/site/primary/_footer.scss */
 .footer-links h1 {
   margin-bottom: 40px;
 }
