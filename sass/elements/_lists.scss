@@ -20,7 +20,7 @@ ol li {
 
 li {
   background: url('./images/checkmark-circle.svg') no-repeat left top; /* <-- change `left` & `top` too for extra control */
-  padding: 3px 0px 15px 60px;
+  padding: 3px 10px 15px 60px;
   /* reset styles (optional): */
   list-style: none;
   margin: 0;
@@ -36,6 +36,17 @@ dd {
 }
 
 .widget-area ul li{
-		background: none;
-		display: block;
+	background: none;
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	ul {
+		margin: 0;
 	}
+	.list li {
+		background-size: 1.5em;
+		padding: 0px 0px 1px 30px;
+		margin: 10px 0;
+	}
+}

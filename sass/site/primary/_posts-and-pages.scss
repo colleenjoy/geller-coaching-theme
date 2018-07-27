@@ -40,7 +40,7 @@
 
 .ctct-form-field input {
 	border-radius: 0;
-	height: 2.5em;
+	height: 2em;
 	border-color: $color__border-button;
 	color: $color__link;
 	width: 50%;
@@ -48,7 +48,7 @@
 
 .ctct-form .ctct-form-field-submit input {
 	background-color: $color__background-button;
-	font-size: 16px;
+	font-size: 1rem;
 	font-family: "josefin slab";
 	padding-right: 40px;
 	padding-left: 30px;
@@ -104,9 +104,10 @@
 
 .call-to-action {
 	font-weight: 400;
-	padding: 60px 0;
+	padding: 60px 10px;
 	text-align: center;
 }
+
 
 // About Page Template
 
@@ -233,3 +234,83 @@
 	}
 }
 
+
+// for mobile
+
+@media screen and (max-width: 600px) {
+
+	// front page 
+
+	.featured-banner {
+		padding: 20px 0;
+	}
+	.featured-cards {
+		display: block
+	}
+	.featured-card{
+		border: #808C99 2px solid;
+		height: 165px;
+		width: 183px;
+		position: relative;
+		margin: 60px auto;
+	}
+	.card-text {
+		margin: 21px 12px 0 14px;
+		text-align: left;
+		font-size: .75em;
+	}
+	.featured-card-link {
+		background-color: #B9BFC7;
+		height: 45px;
+		width: 200px;
+		text-align: center;
+		font-family: "josefin slab";
+		position: absolute;
+		left: -9px;
+		bottom: 15px;
+	}
+
+	// about page
+
+	.secondary-about {
+		display: block;
+		width: 100%;
+	}
+
+	.secondary-about div {
+		width: 80%;
+	}
+
+	// coaching page
+
+	.list li {
+		width: 280px;
+		display: block;
+	}
+
+	// blog page
+
+	.blog-page {
+		width: 76%;
+		margin: 60px 12%;
+	}
+	.widget-area {
+		display: none;
+	}
+	.entry-meta {
+		font-size: .75em;
+	}
+
+	// connect page
+	.connect-page {
+		margin: 60px 12%;
+		width: 76%;
+		.ctct-form-field{
+			display: block;
+		}
+		.ctct-textarea {
+			height: 200px;
+		}
+	}
+
+}

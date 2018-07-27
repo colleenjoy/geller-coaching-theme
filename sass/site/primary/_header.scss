@@ -2,6 +2,9 @@
 .site-header {
     height: 500px;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
     background-size: cover; 
 }
 
@@ -42,4 +45,42 @@
 
 .description-left {
     padding-left: 12%;
+}
+
+// for mobile devices
+
+@media screen and (max-width: 600px) {
+    .site-header {
+        height: 200px;
+    }
+    
+    .site-description {
+        display: none;
+    }
+    .site-title {
+        font-size: 1.5em;
+        line-height: 1em;
+        margin-bottom: -.5em;
+        font-family: "josefin slab";
+        margin-top: -15%;
+        // background: transparentize($color__background-menu, .2);
+        
+    }
+    .title-right {
+        padding-left: 40%;
+    }
+
+    .title-left {
+        padding-left: 8%;
+    }
+    .site-title.site-title-home {
+        position: absolute;
+        top: 10px;
+        left: calc(50% - 62.5px);
+        padding: 0;
+        margin: 0;
+        a {
+            color: $color__menu-link;
+        }
+    }
 }

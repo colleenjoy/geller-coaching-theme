@@ -17,7 +17,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600|Lato:300,300i,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+		crossorigin="anonymous"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -29,6 +34,12 @@
 		.site-header {
 			background-image: url(<?php header_image(); ?>);
 		}
+		@media screen and (max-width: 600px) {
+			.site-header {
+				background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(<?php header_image();?>);
+				background-size: cover;
+			}
+		}
 		</style>
 <?php
 	else :
@@ -36,6 +47,12 @@
 	<style type="text/css">
 		.site-header {
 			background-image: url(<?php the_field('header_image'); ?>);
+		}
+		@media screen and (max-width: 600px) {
+			.site-header {
+				background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(<?php the_field('header_image');?>);
+				background-size: cover;
+			}
 		}
 	</style>
 <?php endif; ?>
@@ -50,13 +67,14 @@
 			<big class="site-logo" ><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></big>
 			<?php endif; ?>
 
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'coach' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+				<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+				?>
+			<button class="menu-close icon-button" aria-controls="primary-menu" aria-expanded="false"><i class="fas fa-times"></i></button>
 		</nav><!-- #site-navigation -->
 
 		<div class="site-branding">

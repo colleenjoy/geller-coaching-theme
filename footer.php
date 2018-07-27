@@ -51,7 +51,7 @@
 			<span class="sep"> | </span>
 				<small><?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'coach' ), 'coach', '<a href="https: //colleen-higgins-designs.github.io/portfolio/">Colleen Higgins Designs</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'coach' ), 'Coach', '<a href="https: //colleen-higgins-designs.github.io/portfolio/">Colleen Higgins Designs</a>' );
 				?></small>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
