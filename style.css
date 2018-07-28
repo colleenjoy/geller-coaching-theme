@@ -716,8 +716,8 @@ input[type="submit"] {
   border-radius: 3px;
   background: #B9BFC7;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
   padding: .6em 1em .4em;
 }
@@ -743,6 +743,11 @@ input[type="submit"]:focus {
 button.icon-button {
   background: none;
   border: none;
+}
+
+/* line 29, sass/forms/_buttons.scss */
+button.fas {
+  font-size: 1rem;
 }
 
 /* line 1, sass/forms/_fields.scss */
@@ -987,8 +992,8 @@ a:hover, a:active {
 .menu-close {
   display: none;
   position: absolute;
-  top: 60px;
-  right: 40px;
+  top: 40px;
+  right: 20px;
   color: white;
 }
 
@@ -996,9 +1001,9 @@ a:hover, a:active {
   /* line 97, sass/navigation/_menus.scss */
   .menu-toggle {
     position: absolute;
-    top: 60px;
-    right: 40px;
-    background: #4A4A4A;
+    top: 40px;
+    right: 20px;
+    background: rgba(74, 74, 74, 0.9);
     border: none;
     border-radius: 0;
     color: white;
@@ -1013,34 +1018,39 @@ a:hover, a:active {
   /* line 110, sass/navigation/_menus.scss */
   .site-navigation.toggled li {
     display: block;
+    padding: 10px 40px 10px 10px;
+    border-bottom: 1px solid white;
+  }
+  /* line 114, sass/navigation/_menus.scss */
+  .site-navigation.toggled li:last-child {
+    border: none;
   }
 
-  /* line 114, sass/navigation/_menus.scss */
+  /* line 119, sass/navigation/_menus.scss */
   .site-navigation.toggled .menu-close {
     display: block;
   }
 
-  /* line 119, sass/navigation/_menus.scss */
+  /* line 124, sass/navigation/_menus.scss */
   .site-navigation ul {
     display: none;
     list-style: none;
     margin: 0;
     position: absolute;
-    background: #4A4A4A;
-    top: 60px;
-    right: 40px;
+    background: rgba(74, 74, 74, 0.9);
+    top: 40px;
+    right: 20px;
     font-size: .8em;
     line-height: 1.5em;
-    padding-left: 10px;
-    padding-top: 20px;
+    padding: 20px 40px;
     text-align: left;
   }
-  /* line 133, sass/navigation/_menus.scss */
+  /* line 137, sass/navigation/_menus.scss */
   .site-navigation ul li:hover > ul,
   .site-navigation ul li.focus > ul {
     left: auto;
   }
-  /* line 138, sass/navigation/_menus.scss */
+  /* line 142, sass/navigation/_menus.scss */
   .site-navigation .site-logo {
     display: block;
     font-size: 1.2em;
@@ -1605,17 +1615,17 @@ a:hover, a:active {
     margin-top: -15%;
   }
 
-  /* line 69, sass/site/primary/_header.scss */
+  /* line 67, sass/site/primary/_header.scss */
   .title-right {
     padding-left: 40%;
   }
 
-  /* line 73, sass/site/primary/_header.scss */
+  /* line 71, sass/site/primary/_header.scss */
   .title-left {
     padding-left: 8%;
   }
 
-  /* line 76, sass/site/primary/_header.scss */
+  /* line 74, sass/site/primary/_header.scss */
   .site-title.site-title-home {
     position: absolute;
     top: 10px;
@@ -1623,7 +1633,7 @@ a:hover, a:active {
     padding: 0;
     margin: 0;
   }
-  /* line 82, sass/site/primary/_header.scss */
+  /* line 80, sass/site/primary/_header.scss */
   .site-title.site-title-home a {
     color: white;
   }
@@ -1668,6 +1678,11 @@ a:hover, a:active {
   /* line 30, sass/site/primary/_footer.scss */
   .footer-links div {
     width: 100%;
+    margin-bottom: 30px;
+  }
+  /* line 34, sass/site/primary/_footer.scss */
+  .footer-links h1 {
+    margin-bottom: 5px;
   }
 }
 /*--------------------------------------------------------------
